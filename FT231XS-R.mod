@@ -1,0 +1,202 @@
+PCBNEW-LibModule-V1  
+# encoding utf-8
+Units mm
+$INDEX
+SOP63P599X175-20N
+$EndINDEX
+$MODULE SOP63P599X175-20N
+Po 0 0 0 15 00000000 00000000 ~~
+Li SOP63P599X175-20N
+Cd 
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 -0.674476 -5.20699 0.640072 0.640072 0 0.05 N V 21 "SOP63P599X175-20N"
+T1 -0.268528 5.10361 0.641257 0.641257 0 0.05 N V 21 "VAL**"
+DS -1.99 4.37 -1.99 -4.37 0.127 27
+DS -1.99 -4.37 1.99 -4.37 0.127 27
+DS 1.99 -4.37 1.99 4.37 0.127 27
+DS 1.99 4.37 -1.99 4.37 0.127 27
+DS -1.99 -3.24 -1.99 -4.37 0.127 21
+DS -1.99 -4.37 1.99 -4.37 0.127 21
+DS 1.99 -4.37 1.99 -3.24 0.127 21
+DS -1.99 3.24 -1.99 4.37 0.127 21
+DS -1.99 4.37 1.99 4.37 0.127 21
+DS 1.99 4.37 1.99 3.24 0.127 21
+DS -3.71 -3.32 -2.25 -3.32 0.05 26
+DS -2.25 -3.32 -2.25 -4.62 0.05 26
+DS -2.25 -4.62 2.25 -4.62 0.05 26
+DS 2.25 -4.62 2.25 -3.32 0.05 26
+DS 2.25 -3.32 3.71 -3.32 0.05 26
+DS 3.71 3.32 2.25 3.32 0.05 26
+DS 2.25 3.32 2.25 4.62 0.05 26
+DS 2.25 4.62 -2.25 4.62 0.05 26
+DS -2.25 4.62 -2.25 3.32 0.05 26
+DS -2.25 3.32 -3.71 3.32 0.05 26
+DS -3.71 3.32 -3.71 -3.32 0.05 26
+DS 3.71 3.32 3.71 -3.32 0.05 26
+DC -4 -2.9 -3.9 -2.9 0.2 21
+DC -4 -2.9 -3.9 -2.9 0.2 27
+$PAD
+Sh "1" R 1.97 0.41 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.47 -2.8575
+$EndPAD
+$PAD
+Sh "2" R 1.97 0.41 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.47 -2.2225
+$EndPAD
+$PAD
+Sh "3" R 1.97 0.41 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.47 -1.5875
+$EndPAD
+$PAD
+Sh "4" R 1.97 0.41 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.47 -0.9525
+$EndPAD
+$PAD
+Sh "5" R 1.97 0.41 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.47 -0.3175
+$EndPAD
+$PAD
+Sh "6" R 1.97 0.41 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.47 0.3175
+$EndPAD
+$PAD
+Sh "7" R 1.97 0.41 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.47 0.9525
+$EndPAD
+$PAD
+Sh "8" R 1.97 0.41 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.47 1.5875
+$EndPAD
+$PAD
+Sh "9" R 1.97 0.41 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.47 2.2225
+$EndPAD
+$PAD
+Sh "10" R 1.97 0.41 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.47 2.8575
+$EndPAD
+$PAD
+Sh "11" R 1.97 0.41 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.47 2.8575
+$EndPAD
+$PAD
+Sh "12" R 1.97 0.41 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.47 2.2225
+$EndPAD
+$PAD
+Sh "13" R 1.97 0.41 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.47 1.5875
+$EndPAD
+$PAD
+Sh "14" R 1.97 0.41 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.47 0.9525
+$EndPAD
+$PAD
+Sh "15" R 1.97 0.41 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.47 0.3175
+$EndPAD
+$PAD
+Sh "16" R 1.97 0.41 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.47 -0.3175
+$EndPAD
+$PAD
+Sh "17" R 1.97 0.41 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.47 -0.9525
+$EndPAD
+$PAD
+Sh "18" R 1.97 0.41 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.47 -1.5875
+$EndPAD
+$PAD
+Sh "19" R 1.97 0.41 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.47 -2.2225
+$EndPAD
+$PAD
+Sh "20" R 1.97 0.41 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.47 -2.8575
+$EndPAD
+$EndMODULE SOP63P599X175-20N
