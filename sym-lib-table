@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name MIC5504-3.3YM5-TR)(type Legacy)(uri ${KIPRJMOD}/MIC5504-3.3YM5-TR.lib)(options "")(descr ""))
+  (lib (name MASA-Radio-Board-rescue)(type Legacy)(uri "${KIPRJMOD}/MASA-Radio Board-rescue.lib")(options "")(descr ""))
 )
