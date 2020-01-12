@@ -25,17 +25,6 @@ F 3 "~" H 8600 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C93
-U 1 1 5DCB7D7B
-P 3600 2950
-F 0 "C93" V 3348 2950 50  0000 C CNN
-F 1 "100pf" V 3439 2950 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3638 2800 50  0001 C CNN
-F 3 "~" H 3600 2950 50  0001 C CNN
-	1    3600 2950
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C C96
 U 1 1 5DCB9CD1
 P 7750 2850
@@ -159,12 +148,12 @@ $EndComp
 $Comp
 L Device:R_US R92
 U 1 1 5DD67335
-P 3900 3350
-F 0 "R92" H 3968 3396 50  0000 L CNN
-F 1 "0" H 3968 3305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3940 3340 50  0001 C CNN
-F 3 "~" H 3900 3350 50  0001 C CNN
-	1    3900 3350
+P 3850 2950
+F 0 "R92" H 3918 2996 50  0000 L CNN
+F 1 "0" H 3918 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3890 2940 50  0001 C CNN
+F 3 "~" H 3850 2950 50  0001 C CNN
+	1    3850 2950
 	0    1    1    0   
 $EndComp
 $Comp
@@ -309,30 +298,6 @@ F 3 "" H 6850 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R91
-U 1 1 5E0A7D89
-P 3900 3250
-F 0 "R91" H 3968 3296 50  0000 L CNN
-F 1 "0" H 3968 3205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3940 3240 50  0001 C CNN
-F 3 "~" H 3900 3250 50  0001 C CNN
-	1    3900 3250
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4050 3350 4150 3350
-$Comp
-L power:GND #PWR033
-U 1 1 5E0B3A8E
-P 3600 2800
-F 0 "#PWR033" H 3600 2550 50  0001 C CNN
-F 1 "GND" H 3605 2627 50  0000 C CNN
-F 2 "" H 3600 2800 50  0001 C CNN
-F 3 "" H 3600 2800 50  0001 C CNN
-	1    3600 2800
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C C92
 U 1 1 5E0BDAE5
 P 2500 5000
@@ -386,38 +351,15 @@ Wire Wire Line
 	2800 5000 2650 5000
 Connection ~ 2800 4800
 $Comp
-L power:+5V #PWR032
-U 1 1 5E0BDB02
-P 2800 5000
-F 0 "#PWR032" H 2800 4850 50  0001 C CNN
-F 1 "+5V" V 2815 5128 50  0000 L CNN
-F 2 "" H 2800 5000 50  0001 C CNN
-F 3 "" H 2800 5000 50  0001 C CNN
-	1    2800 5000
-	0    1    1    0   
-$EndComp
-Connection ~ 2800 5000
-$Comp
 L Device:C C94
 U 1 1 5E0C191D
-P 3750 3600
-F 0 "C94" V 3900 3600 50  0000 C CNN
-F 1 "100pf" V 3589 3600 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3788 3450 50  0001 C CNN
-F 3 "~" H 3750 3600 50  0001 C CNN
-	1    3750 3600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR034
-U 1 1 5E0C3AF0
-P 3600 3600
-F 0 "#PWR034" H 3600 3350 50  0001 C CNN
-F 1 "GND" H 3605 3427 50  0000 C CNN
-F 2 "" H 3600 3600 50  0001 C CNN
-F 3 "" H 3600 3600 50  0001 C CNN
-	1    3600 3600
-	0    1    1    0   
+P 4150 2800
+F 0 "C94" V 4300 2800 50  0000 C CNN
+F 1 "100pf" V 3989 2800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4188 2650 50  0001 C CNN
+F 3 "~" H 4150 2800 50  0001 C CNN
+	1    4150 2800
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	7950 3500 8150 3500
@@ -448,18 +390,7 @@ Connection ~ 9100 3600
 Wire Wire Line
 	9100 3600 9200 3600
 Wire Wire Line
-	3400 3350 3750 3350
-Wire Wire Line
-	3900 3600 4150 3600
-Wire Wire Line
-	4150 3600 4150 3350
-Wire Wire Line
-	3600 3100 3600 3250
-Wire Wire Line
-	3400 3250 3600 3250
-Connection ~ 3600 3250
-Wire Wire Line
-	3600 3250 3750 3250
+	3400 3350 3550 3350
 NoConn ~ 2200 4050
 NoConn ~ 2200 4150
 NoConn ~ 2200 4250
@@ -491,15 +422,6 @@ Text Label 8150 7650 0    50   ~ 0
 12-21-19
 Text Label 7500 7500 0    50   ~ 0
 CAN_Transciever
-Wire Wire Line
-	4150 3350 4150 3250
-Connection ~ 4150 3350
-Wire Wire Line
-	4050 3250 4050 3200
-Wire Wire Line
-	4050 3200 4200 3200
-Wire Wire Line
-	4200 3200 4200 3350
 $Comp
 L Device:C_Small C95
 U 1 1 5E22EBAC
@@ -531,92 +453,76 @@ Wire Wire Line
 $Comp
 L dk_Logic-Translators-Level-Shifters:SN74LVC1T45DBVR U91
 U 1 1 5E23BA35
-P 5600 2950
-F 0 "U91" H 5600 2347 60  0000 C CNN
-F 1 "SN74LVC1T45DBVR" H 5600 2453 60  0000 C CNN
-F 2 "digikey-footprints:SOT-23-6" H 5800 3150 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1t45" H 5800 3250 60  0001 L CNN
-F 4 "296-16843-1-ND" H 5800 3350 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74LVC1T45DBVR" H 5800 3450 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 5800 3550 60  0001 L CNN "Category"
-F 7 "Logic - Translators, Level Shifters" H 5800 3650 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1t45" H 5800 3750 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74LVC1T45DBVR/296-16843-1-ND/639459" H 5800 3850 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC TRNSLTR BIDIRECTIONAL SOT23-6" H 5800 3950 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 5800 4050 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5800 4150 60  0001 L CNN "Status"
-	1    5600 2950
+P 5250 2950
+F 0 "U91" H 5250 2347 60  0000 C CNN
+F 1 "SN74LVC1T45DBVR" H 5250 2453 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-6" H 5450 3150 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1t45" H 5450 3250 60  0001 L CNN
+F 4 "296-16843-1-ND" H 5450 3350 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74LVC1T45DBVR" H 5450 3450 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 5450 3550 60  0001 L CNN "Category"
+F 7 "Logic - Translators, Level Shifters" H 5450 3650 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1t45" H 5450 3750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74LVC1T45DBVR/296-16843-1-ND/639459" H 5450 3850 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC TRNSLTR BIDIRECTIONAL SOT23-6" H 5450 3950 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 5450 4050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5450 4150 60  0001 L CNN "Status"
+	1    5250 2950
 	1    0    0    1   
 $EndComp
 $Comp
 L dk_Logic-Translators-Level-Shifters:SN74LVC1T45DBVR U92
 U 1 1 5E2400EF
-P 5600 4300
-F 0 "U92" H 5600 3697 60  0000 C CNN
-F 1 "SN74LVC1T45DBVR" H 5600 3803 60  0000 C CNN
-F 2 "digikey-footprints:SOT-23-6" H 5800 4500 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1t45" H 5800 4600 60  0001 L CNN
-F 4 "296-16843-1-ND" H 5800 4700 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74LVC1T45DBVR" H 5800 4800 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 5800 4900 60  0001 L CNN "Category"
-F 7 "Logic - Translators, Level Shifters" H 5800 5000 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1t45" H 5800 5100 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74LVC1T45DBVR/296-16843-1-ND/639459" H 5800 5200 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC TRNSLTR BIDIRECTIONAL SOT23-6" H 5800 5300 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 5800 5400 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5800 5500 60  0001 L CNN "Status"
-	1    5600 4300
+P 5250 4300
+F 0 "U92" H 5250 3697 60  0000 C CNN
+F 1 "SN74LVC1T45DBVR" H 5250 3803 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-6" H 5450 4500 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1t45" H 5450 4600 60  0001 L CNN
+F 4 "296-16843-1-ND" H 5450 4700 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74LVC1T45DBVR" H 5450 4800 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 5450 4900 60  0001 L CNN "Category"
+F 7 "Logic - Translators, Level Shifters" H 5450 5000 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1t45" H 5450 5100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74LVC1T45DBVR/296-16843-1-ND/639459" H 5450 5200 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC TRNSLTR BIDIRECTIONAL SOT23-6" H 5450 5300 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 5450 5400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5450 5500 60  0001 L CNN "Status"
+	1    5250 4300
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	5900 2950 6300 2950
-Wire Wire Line
 	6300 2950 6300 3400
-Wire Wire Line
-	6300 4300 5900 4300
-Wire Wire Line
-	4800 3250 4800 2950
-Wire Wire Line
-	4800 2950 5300 2950
-Wire Wire Line
-	4150 3250 4800 3250
-Wire Wire Line
-	4800 3350 4800 4300
-Wire Wire Line
-	4800 4300 5300 4300
-Wire Wire Line
-	4200 3350 4800 3350
 $Comp
 L power:GND #PWR?
 U 1 1 5E25071C
-P 5300 4100
-F 0 "#PWR?" H 5300 3850 50  0001 C CNN
-F 1 "GND" V 5305 3972 50  0000 R CNN
-F 2 "" H 5300 4100 50  0001 C CNN
-F 3 "" H 5300 4100 50  0001 C CNN
-	1    5300 4100
+P 4950 4100
+F 0 "#PWR?" H 4950 3850 50  0001 C CNN
+F 1 "GND" V 4955 3972 50  0000 R CNN
+F 2 "" H 4950 4100 50  0001 C CNN
+F 3 "" H 4950 4100 50  0001 C CNN
+	1    4950 4100
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E250D83
-P 5700 2550
-F 0 "#PWR?" H 5700 2300 50  0001 C CNN
-F 1 "GND" V 5705 2422 50  0000 R CNN
-F 2 "" H 5700 2550 50  0001 C CNN
-F 3 "" H 5700 2550 50  0001 C CNN
-	1    5700 2550
+P 5350 2550
+F 0 "#PWR?" H 5350 2300 50  0001 C CNN
+F 1 "GND" V 5355 2422 50  0000 R CNN
+F 2 "" H 5350 2550 50  0001 C CNN
+F 3 "" H 5350 2550 50  0001 C CNN
+	1    5350 2550
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E2516EF
-P 5700 3900
-F 0 "#PWR?" H 5700 3650 50  0001 C CNN
-F 1 "GND" V 5705 3772 50  0000 R CNN
-F 2 "" H 5700 3900 50  0001 C CNN
-F 3 "" H 5700 3900 50  0001 C CNN
-	1    5700 3900
+P 5350 3900
+F 0 "#PWR?" H 5350 3650 50  0001 C CNN
+F 1 "GND" V 5355 3772 50  0000 R CNN
+F 2 "" H 5350 3900 50  0001 C CNN
+F 3 "" H 5350 3900 50  0001 C CNN
+	1    5350 3900
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -625,16 +531,140 @@ Connection ~ 6800 3400
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5E2603B1
-P 5300 2750
-F 0 "#PWR?" H 5300 2600 50  0001 C CNN
-F 1 "+3V3" V 5315 2878 50  0000 L CNN
-F 2 "" H 5300 2750 50  0001 C CNN
-F 3 "" H 5300 2750 50  0001 C CNN
-	1    5300 2750
+P 4950 2750
+F 0 "#PWR?" H 4950 2600 50  0001 C CNN
+F 1 "+3V3" V 4965 2878 50  0000 L CNN
+F 2 "" H 4950 2750 50  0001 C CNN
+F 3 "" H 4950 2750 50  0001 C CNN
+	1    4950 2750
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	6300 3500 6950 3500
 Wire Wire Line
 	6300 3500 6300 4300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E266276
+P 5250 3350
+F 0 "#PWR?" H 5250 3200 50  0001 C CNN
+F 1 "+3V3" H 5344 3523 50  0000 C CNN
+F 2 "" H 5250 3350 50  0001 C CNN
+F 3 "" H 5250 3350 50  0001 C CNN
+	1    5250 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E2667FA
+P 5350 3350
+F 0 "#PWR?" H 5350 3200 50  0001 C CNN
+F 1 "+5V" H 5326 3523 50  0000 C CNN
+F 2 "" H 5350 3350 50  0001 C CNN
+F 3 "" H 5350 3350 50  0001 C CNN
+	1    5350 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E267CF5
+P 5250 4700
+F 0 "#PWR?" H 5250 4550 50  0001 C CNN
+F 1 "+3V3" H 5344 4873 50  0000 C CNN
+F 2 "" H 5250 4700 50  0001 C CNN
+F 3 "" H 5250 4700 50  0001 C CNN
+	1    5250 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E267CFB
+P 5350 4700
+F 0 "#PWR?" H 5350 4550 50  0001 C CNN
+F 1 "+5V" H 5326 4873 50  0000 C CNN
+F 2 "" H 5350 4700 50  0001 C CNN
+F 3 "" H 5350 4700 50  0001 C CNN
+	1    5350 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E269EEC
+P 2800 5000
+F 0 "#PWR?" H 2800 4850 50  0001 C CNN
+F 1 "+3V3" V 2815 5128 50  0000 L CNN
+F 2 "" H 2800 5000 50  0001 C CNN
+F 3 "" H 2800 5000 50  0001 C CNN
+	1    2800 5000
+	0    1    1    0   
+$EndComp
+Connection ~ 2800 5000
+Wire Wire Line
+	3400 3250 4150 3250
+Wire Wire Line
+	4950 2950 4150 2950
+Wire Wire Line
+	5550 2950 6300 2950
+Wire Wire Line
+	5550 4300 5750 4300
+Wire Wire Line
+	3550 2950 3550 3350
+Connection ~ 4150 2950
+$Comp
+L power:GND #PWR034
+U 1 1 5E0C3AF0
+P 4150 2650
+F 0 "#PWR034" H 4150 2400 50  0001 C CNN
+F 1 "GND" H 4155 2477 50  0000 C CNN
+F 2 "" H 4150 2650 50  0001 C CNN
+F 3 "" H 4150 2650 50  0001 C CNN
+	1    4150 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 3250 4150 4300
+Wire Wire Line
+	4150 4300 4950 4300
+Wire Wire Line
+	3700 2950 3550 2950
+Wire Wire Line
+	4000 2950 4150 2950
+$Comp
+L Device:C C912
+U 1 1 5E289934
+P 5750 4450
+F 0 "C912" V 5900 4450 50  0000 C CNN
+F 1 "100pf" V 5589 4450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5788 4300 50  0001 C CNN
+F 3 "~" H 5750 4450 50  0001 C CNN
+	1    5750 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E28993A
+P 5750 4600
+F 0 "#PWR?" H 5750 4350 50  0001 C CNN
+F 1 "GND" H 5755 4427 50  0000 C CNN
+F 2 "" H 5750 4600 50  0001 C CNN
+F 3 "" H 5750 4600 50  0001 C CNN
+	1    5750 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R911
+U 1 1 5E28BD91
+P 6050 4300
+F 0 "R911" H 6118 4346 50  0000 L CNN
+F 1 "0" H 6118 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6090 4290 50  0001 C CNN
+F 3 "~" H 6050 4300 50  0001 C CNN
+	1    6050 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 4300 5750 4300
+Wire Wire Line
+	6200 4300 6300 4300
+Connection ~ 5750 4300
 $EndSCHEMATC
