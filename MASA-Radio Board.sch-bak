@@ -54,30 +54,6 @@ $EndComp
 Wire Wire Line
 	13850 4150 13850 4000
 $Comp
-L Device:C_Small C11
-U 1 1 5E19C8DE
-P 10200 4850
-F 0 "C11" H 10292 4896 50  0000 L CNN
-F 1 "C_Small" H 10292 4805 50  0000 L CNN
-F 2 "" H 10200 4850 50  0001 C CNN
-F 3 "~" H 10200 4850 50  0001 C CNN
-	1    10200 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR025
-U 1 1 5E19D471
-P 10200 4950
-F 0 "#PWR025" H 10200 4700 50  0001 C CNN
-F 1 "GND" H 10205 4777 50  0000 C CNN
-F 2 "" H 10200 4950 50  0001 C CNN
-F 3 "" H 10200 4950 50  0001 C CNN
-	1    10200 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10200 4750 10450 4750
-$Comp
 L power:GND #PWR011
 U 1 1 5E22734D
 P 3600 8000
@@ -111,7 +87,7 @@ F14 "RESET" I L 8050 9400 50
 $EndSheet
 Text Notes 7850 10000 0    157  ~ 0
 CAN_Template
-Text Notes 11500 5650 0    157  ~ 0
+Text Notes 11450 5850 0    157  ~ 0
 BL654PA MCU
 Wire Wire Line
 	3300 5350 7900 5350
@@ -547,18 +523,6 @@ F 3 "" H 10450 4150 50  0001 C CNN
 	1    10450 4150
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:+5V #PWR024
-U 1 1 5E181448
-P 10200 4750
-F 0 "#PWR024" H 10200 4600 50  0001 C CNN
-F 1 "+5V" V 10215 4878 50  0000 L CNN
-F 2 "" H 10200 4750 50  0001 C CNN
-F 3 "" H 10200 4750 50  0001 C CNN
-	1    10200 4750
-	0    -1   -1   0   
-$EndComp
-Connection ~ 10200 4750
 Text GLabel 8050 6850 0    50   Input ~ 0
 CAN_L
 Text GLabel 8050 7050 0    50   Input ~ 0
@@ -1103,4 +1067,89 @@ Text Notes 4150 13100 0    157  ~ 0
 5V Power Conditioning
 Text Notes 4250 3850 0    50   ~ 0
 Load Switch
+$Comp
+L MASA-Radio-Board-rescue:UJ2-MBH-1-SMT-TR-dk_USB-DVI-HDMI-Connectors J7
+U 1 1 5E2CF9B0
+P 9750 11950
+F 0 "J7" H 9775 12602 60  0000 C CNN
+F 1 "UJ2-MBH-1-SMT-TR" H 9775 12496 60  0000 C CNN
+F 2 "digikey-footprints:USB_Mini_B_Female_UJ2-MBH-1-SMT-TR" H 9950 12150 60  0001 L CNN
+F 3 "https://www.cui.com/product/resource/digikeypdf/uj2-mbh-smt.pdf" H 9950 12250 60  0001 L CNN
+F 4 "102-4003-1-ND" H 9950 12350 60  0001 L CNN "Digi-Key_PN"
+F 5 "UJ2-MBH-1-SMT-TR" H 9950 12450 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 9950 12550 60  0001 L CNN "Category"
+F 7 "USB, DVI, HDMI Connectors" H 9950 12650 60  0001 L CNN "Family"
+F 8 "https://www.cui.com/product/resource/digikeypdf/uj2-mbh-smt.pdf" H 9950 12750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cui-inc/UJ2-MBH-1-SMT-TR/102-4003-1-ND/6187925" H 9950 12850 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN RCPT USB2.0 MINI B SMD R/A" H 9950 12950 60  0001 L CNN "Description"
+F 11 "CUI Inc." H 9950 13050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9950 13150 60  0001 L CNN "Status"
+	1    9750 11950
+	1    0    0    -1  
+$EndComp
+Text Notes 9550 13050 0    157  ~ 0
+USB
+$Comp
+L power:GND #PWR?
+U 1 1 5E2D4420
+P 9550 12450
+F 0 "#PWR?" H 9550 12200 50  0001 C CNN
+F 1 "GND" H 9555 12277 50  0000 C CNN
+F 2 "" H 9550 12450 50  0001 C CNN
+F 3 "" H 9550 12450 50  0001 C CNN
+	1    9550 12450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2D4D60
+P 10050 12150
+F 0 "#PWR?" H 10050 11900 50  0001 C CNN
+F 1 "GND" V 10055 12022 50  0000 R CNN
+F 2 "" H 10050 12150 50  0001 C CNN
+F 3 "" H 10050 12150 50  0001 C CNN
+	1    10050 12150
+	0    -1   -1   0   
+$EndComp
+Text GLabel 10050 11950 2    50   Input ~ 0
+USB_D+
+Text GLabel 11750 5200 3    50   Input ~ 0
+USB_D+
+Text GLabel 10050 11850 2    50   Input ~ 0
+USB_D-
+Text GLabel 11550 5200 3    50   Input ~ 0
+USB_D-
+Text GLabel 10050 11750 2    50   Input ~ 0
+USB_VBUS
+Wire Wire Line
+	10350 4750 10300 4750
+Wire Wire Line
+	10350 4850 10350 4750
+Text GLabel 10300 4750 0    50   Input ~ 0
+USB_VBUS
+$Comp
+L power:GND #PWR025
+U 1 1 5E19D471
+P 10350 5050
+F 0 "#PWR025" H 10350 4800 50  0001 C CNN
+F 1 "GND" H 10355 4877 50  0000 C CNN
+F 2 "" H 10350 5050 50  0001 C CNN
+F 3 "" H 10350 5050 50  0001 C CNN
+	1    10350 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 5E19C8DE
+P 10350 4950
+F 0 "C11" H 10442 4996 50  0000 L CNN
+F 1 "1nF" H 10442 4905 50  0000 L CNN
+F 2 "" H 10350 4950 50  0001 C CNN
+F 3 "~" H 10350 4950 50  0001 C CNN
+	1    10350 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 4750 10350 4750
+Connection ~ 10350 4750
 $EndSCHEMATC
