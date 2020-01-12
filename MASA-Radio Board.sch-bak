@@ -359,7 +359,7 @@ F 3 "~" H 5400 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 5650 2400 3    50   Input ~ 0
-5V0
+3V3
 Wire Wire Line
 	5550 2400 5550 2500
 $Comp
