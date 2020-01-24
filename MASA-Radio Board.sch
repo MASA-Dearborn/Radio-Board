@@ -1064,7 +1064,7 @@ Wire Wire Line
 Text Notes 15500 2850 0    50   ~ 0
 Reserve I/O Pins for:
 Text Notes 15500 3850 0    50   ~ 0
--CS\n-SCK\n-CAN_INT\n-RX0BF\n-RX1BF\n-TXORTS\n-TX1RTS\n-TX2RTS\n-CAN_RESET\n\n-TSENSE
+-CS*\n-SCK\n-CAN_INT\n-RX0BF*\n-RX1BF*\n-TXORTS*\n-TX1RTS*\n-TX2RTS*\n-CAN_RESET*\n\n-TSENSE
 Wire Wire Line
 	4950 4150 5550 4150
 Wire Wire Line
@@ -1533,14 +1533,34 @@ USB_D-
 Text GLabel 9550 12000 2    50   Input ~ 0
 USB_D+
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0101
 U 1 1 5E65F90C
 P 10150 3000
-F 0 "#PWR?" H 10150 2850 50  0001 C CNN
+F 0 "#PWR0101" H 10150 2850 50  0001 C CNN
 F 1 "+3.3V" V 10165 3128 50  0000 L CNN
 F 2 "" H 10150 3000 50  0001 C CNN
 F 3 "" H 10150 3000 50  0001 C CNN
 	1    10150 3000
 	0    1    1    0   
 $EndComp
+Text GLabel 13600 2550 1    50   Input ~ 0
+CAN_RST
+Text GLabel 13500 2550 1    50   Input ~ 0
+CS
+Text GLabel 11450 3100 0    50   Input ~ 0
+RX1BF
+Text GLabel 11450 3000 0    50   Input ~ 0
+RX0BF
+Text GLabel 13200 2550 1    50   Input ~ 0
+TX0RTS
+Text GLabel 13100 2550 1    50   Input ~ 0
+TX2RTS
+Text GLabel 13000 2550 1    50   Input ~ 0
+TX1RTS
+Text GLabel 13300 2550 1    50   Input ~ 0
+CAN_INT
+Wire Wire Line
+	14100 2550 14100 2650
+Text GLabel 12900 2550 1    50   Input ~ 0
+TSENSE
 $EndSCHEMATC
