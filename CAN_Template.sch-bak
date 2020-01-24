@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:MASA-Radio Board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -440,9 +441,11 @@ $EndComp
 Wire Wire Line
 	6800 3050 6800 2950
 $Comp
-L dk_Logic-Translators-Level-Shifters:SN74LVC1T45DBVR U5
+L MASA-Radio-Board-rescue:SN74LVC1T45DBVR-dk_Logic-Translators-Level-Shifters U5
 U 1 1 5E23BA35
 P 5250 2950
+AR Path="/5E23BA35" Ref="U5"  Part="1" 
+AR Path="/5E22EDDC/5E23BA35" Ref="U5"  Part="1" 
 F 0 "U5" H 5250 2347 60  0000 C CNN
 F 1 "SN74LVC1T45DBVR" H 5250 2453 60  0000 C CNN
 F 2 "digikey-footprints:SOT-23-6" H 5450 3150 60  0001 L CNN
@@ -460,9 +463,11 @@ F 12 "Active" H 5450 4150 60  0001 L CNN "Status"
 	1    0    0    1   
 $EndComp
 $Comp
-L dk_Logic-Translators-Level-Shifters:SN74LVC1T45DBVR U8
+L MASA-Radio-Board-rescue:SN74LVC1T45DBVR-dk_Logic-Translators-Level-Shifters U8
 U 1 1 5E2400EF
 P 5250 4300
+AR Path="/5E2400EF" Ref="U8"  Part="1" 
+AR Path="/5E22EDDC/5E2400EF" Ref="U8"  Part="1" 
 F 0 "U8" H 5250 3697 60  0000 C CNN
 F 1 "SN74LVC1T45DBVR" H 5250 3803 60  0000 C CNN
 F 2 "digikey-footprints:SOT-23-6" H 5450 4500 60  0001 L CNN
